@@ -29,7 +29,7 @@ default_layer {
  >;
 };
 
-numpad_layer {
+navigation_layer {
  bindings = <
   &kp ESC   &kp F1    &kp F2   &kp F3    &kp F4    &kp F5    &kp F6   &kp F7   &kp F8    
                                                                    &kp F9   &kp F10  &kp F11   &kp F12  &kp PSCRN &kp SLCK &kp PAUSE_BREAK &tog 1 &to 2
@@ -41,10 +41,10 @@ numpad_layer {
                                                       &kp LCTRL    &kp LALT     &kp RGUI  &kp RCTRL 
                                          &kp BSPC     &kp DEL      &kp HOME     &kp PG_UP &kp ENTER   &kp KP_N0 
                                                                    &kp END      &kp PG_DN 
-
+ >;
 };     
 
-dorvak_layer {
+dvovak_layer {
  bindings = <
   &kp ESC   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6   &kp F7   &kp F8    
                                                                     &kp F9    &kp F10  &kp F11   &kp F12  &kp PSCRN &kp SLCK &kp PAUSE_BREAK &tog 1 &to 3
