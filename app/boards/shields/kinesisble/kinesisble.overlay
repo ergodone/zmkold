@@ -95,6 +95,13 @@
             ;
     };
 
+vbatt {
+		compatible = "zmk,battery-voltage-divider";
+		label = "BATTERY";
+		io-channels = <&adc 5>;
+		output-ohms = <100000>;
+		full-ohms = <(100000 + 100000)>;
+	};
 
 //
 // Matrix layout from:
@@ -126,6 +133,9 @@ default_transform: keymap_transform_0 {
     };
 };
 
+&adc {
+	status = "okay";
+};
 
 /* MCP23s17 GPIO Expander */
 &feather_spi {
@@ -148,3 +158,4 @@ default_transform: keymap_transform_0 {
 	    ngpios = <16>;
     };
 };
+
