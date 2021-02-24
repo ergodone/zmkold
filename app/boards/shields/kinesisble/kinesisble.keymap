@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-
+    // set combo <= program> to go to bootloader
     combos {
 		compatible = "zmk,combos";
 		combo_two {
@@ -19,7 +19,7 @@
 		};
 	};
 
-    
+
     keymap0: keymap {
         compatible = "zmk,keymap";
 
