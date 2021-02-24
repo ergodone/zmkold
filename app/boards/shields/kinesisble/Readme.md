@@ -9,7 +9,8 @@ This firmware was used with the hardware fork from:
 https://github.com/ergodone/KinesisBLE
 
 
-To build firmware
+To build firmware:
+Build Zephyr blinky example.  That ensures the environment and tools are all present.  If you have a J-Link you can run the example but it will overwrite the existing bootloader. For ZMK it is recommended to use the Adafruit bootloader and upload uf2 files.
 From app directory do:
  west build -p -b adafruit_feather_nrf52840 -- -DSHIELD=kinesisble
 
