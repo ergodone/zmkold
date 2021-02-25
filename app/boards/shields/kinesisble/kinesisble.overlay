@@ -62,6 +62,35 @@
         zephyr,code-partition = &code_partition;
     };
 
+    leds {
+		compatible = "gpio-leds";
+        ledu1: led_u1 {
+            gpios = <&feather_header 3 GPIO_ACTIVE_HIGH>;
+            label = "A LED";
+            status = "okay";
+        };
+        ledu2: led_u2 {
+            gpios = <&feather_header 4 GPIO_ACTIVE_HIGH>;
+            label = "1 LED";
+            status = "okay";
+        };
+        ledu3: led_u3 {
+            gpios = <&feather_header 16 GPIO_ACTIVE_HIGH>;
+            label = "DWN LED";
+            status = "okay";
+        };
+        ledu4: led_u4 {
+            gpios = <&feather_header 15 GPIO_ACTIVE_HIGH>;
+            label = "PAD LED";
+            status = "okay";
+        };
+        led_pow: led_pow {
+            gpios = <&feather_header 5 GPIO_ACTIVE_HIGH>;
+            label = "BUTTON LED";
+            status = "okay";
+        };
+    };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
